@@ -1,0 +1,41 @@
+body {
+    /* background-image: url('../img/03_estrangeirismos/estrangeirismo-bg.png'); */
+    background-color: #618bc8;
+}
+
+.bloco-2 {
+    background-image: url('../img/03_estrangeirismos/estrangeirismo1.jpg');
+}
+
+.bloco-3 {
+    background-image: url('../img/03_estrangeirismos/estrangeirismo.png');
+}
+
+.titulo {
+    background-image: url('../img/03_estrangeirismos/estrangeirismo-header.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 201px;
+}
+
+.destaque-final::after {
+    background-image: url('../img/medalhas/medalha_3.png');
+}
+
+.parallax-img-02 {
+    height: 181px;
+    right: 20px;
+}
+
+#fig-2,
+#fig-3 {
+    width: 360px;
+}
+
+@keyframes parallax-2 {
+    0% {top: 150px;}
+    25% {top: 130px;}
+    75% {top: 160px;}
+    100% {top: 150px;}
+}

@@ -1,0 +1,54 @@
+body {
+    /* background-image: url('../img/08_diferentes_formas/diferentesformas-bg.png'); */
+    background-color: #b6b6b6;
+}
+
+.bloco-2 {
+    background-image: url('../img/08_diferentes_formas/diferentesformas1.jpg');
+}
+
+.bloco-3 {
+    background-image: url('../img/08_diferentes_formas/diferentesformas.png');
+}
+
+.bloco-2 * {
+    color: white;
+}
+
+.destaque-final::after {
+    background-image: url('../img/medalhas/medalha_8.png');
+    
+}
+
+.titulo {
+    background-image: url('../img/08_diferentes_formas/diferentesformas-header.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 201px;
+    padding-top: 88px;
+}
+
+.titulo h1 {
+    color: black;
+    font-size: 24px;
+}
+
+#fig-13 {
+    max-height: 600px;
+    border-radius: 15px;
+}
+
+#fig-bolo {
+    max-height: 650px;
+}
+
+.c-50 {
+    width: 50%;
+}
+
+@media (max-width: 700px) {
+    .titulo { 
+        padding-top: 15px;
+    }
+}

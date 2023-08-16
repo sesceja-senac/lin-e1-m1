@@ -1,0 +1,72 @@
+body {
+    /* background-image: url('../img/02_linguagem/linguagem-bg.png'); */
+    background-color: #eada96;
+}
+
+.bloco-2 {
+    background-image: url('../img/02_linguagem/linguagem1.jpg');
+}
+
+.bloco-3 {
+    background-image: url('../img/02_linguagem/linguagem.png');
+}
+
+.bloco-2 *,
+.bloco-3 * {
+    color: white;
+}
+
+.titulo {
+    background-image: url('../img/02_linguagem/linguagem-header.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 201px;
+}
+
+.titulo h1 {
+    color: black;
+}
+
+.detalhe1 {
+    position: absolute;
+    top: 3920px;
+    left: unset;
+    right: 0px;
+    z-index: 1000;
+}
+
+.card-row {
+    display: flex;
+}
+
+.card {
+    margin: 10px;
+    width: 50%;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 2px 2px 5px black;
+    border: 2px solid black;
+}
+
+.card p {
+    color: black;
+}
+
+.ilustra-card {
+    height: 200px;
+    width: auto;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+}

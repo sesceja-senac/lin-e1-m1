@@ -1,0 +1,35 @@
+body {
+    /* background-image: url('../img/07_generos/generos-bg.png'); */
+    background-color: #dba9e7;
+}
+
+.bloco-2 {
+    background-image: url('../img/07_generos/generos1.jpg');
+}
+
+.bloco-3 {
+    background-image: url('../img/07_generos/generos.png');
+}
+
+.bloco-2 *,
+.bloco-3 * {
+    color: white;
+}
+
+.destaque-final::after {
+    background-image: url('../img/medalhas/medalha_7.png');
+    bottom: -40px;
+    right: -70px;
+}
+
+.titulo {
+    background-image: url('../img/07_generos/generos-header.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 201px;
+}
+
+.titulo h1 {
+    color: black;
+}

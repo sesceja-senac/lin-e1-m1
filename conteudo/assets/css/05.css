@@ -1,0 +1,149 @@
+.titulo {
+    background-image: url('../5/diversidade-header.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 201px;
+    padding-top: 88px;
+}
+
+.titulo h1 {
+    font-size: 22px;
+    color: black;
+}
+
+#fig-5 {
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bg-obj {
+    height: 676px;
+    width: 631px;
+    background-image: url('../5/mapa/mapa_colorido.png');
+    display: block;
+    margin: 10px auto;
+    position: relative;
+}
+
+.btn-mapa {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+#norte {
+    width: 410px;
+    height: 317px;
+    background-image: url('../5/mapa/regiao_norte_hover.png');
+    left: 40px;
+    top: 0;
+    z-index: 10;
+
+}
+
+.btn-mapa:hover {
+    opacity: 1;
+    transition-duration: .3s;
+}
+
+#nordeste {
+    width: 221px;
+    height: 277px;
+    background-image: url('../5/mapa/regiao_nordeste_hover.png');
+    right: 15px;
+    top: 93px;
+    z-index: 10;
+}
+
+#centro {
+    width: 241px;
+    height: 261px;
+    background-image: url('../5/mapa/regiao_centro-oeste_hover.png');
+    top: 50%;
+    transform: translateY(-50%);
+    left: 205px;
+    z-index: 15;
+}
+
+#sudeste {
+    height: 212px;
+    width: 224px;
+    background-image: url('../5/mapa/regiao_sudeste_hover.png');
+    right: 70px;
+    bottom: 175px;
+    z-index: 15;
+}
+
+#sul {
+    height: 212px;
+    width: 161px;
+    background-image: url('../5/mapa/regiao_sul_hover.png');
+    bottom: 52px;
+    transform: translateX(-50%);
+    left: 342px;
+    z-index: 20;
+}
+
+#btn-1 {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 12px;
+    background-color: #225656;
+    color: white;
+    transition-duration: .3s;
+}
+
+#btn-2 {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 12px;
+    background-color: #D48B2F;
+    color: white;
+    transition-duration: .3s;
+}
+
+#btn-1:hover,
+#btn-2:hover {
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+
+.img-modal {
+    width: 350px;
+}
+
+.mobile-obj button {
+    display: block;
+    width: 280px;
+    height: 70px;
+    margin: 10px auto;
+    border: 3px solid #EADA96;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.mobile-obj {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .titulo {
+        padding-top: 15px;
+    }
+
+    .bg-obj {
+        display: none;
+    }
+
+    .mobile-obj {
+        display: block;
+    }
+}

@@ -1,0 +1,662 @@
+body {
+    overflow: hidden;
+    background-color: #849CBB;
+}
+
+#curso-titulo {
+  color: white;
+  background-color: rgba(220, 220, 220, .3);
+  display: block;
+  width: 450px;
+  padding: 16px;
+  border-radius: 15px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 100;
+}
+
+#bg {
+  height: 940px;
+  width: 1920px;
+  background-image: url("../tabuleiro/Tabuleiro_idle.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #849CBB;
+  position: relative;
+  transform-origin: top left;
+}
+
+.casa {
+  pointer-events: none;
+  touch-action: none;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aviso {
+  background-color: rgba(25, 25, 25, .7);
+  display: block;
+  width: 740px;
+  
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.aviso p {
+  display: inline;
+  color: white;
+  margin: 0;
+  font-size: 22px;
+}
+
+.aviso-btn {
+  display: inline;
+  background-color: #849CBB;
+  padding: 0px 25px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  transition-duration: .3s;
+}
+
+.aviso-btn:hover {
+  background-color: white;
+  color: #849CBB;
+  transition-duration: .3s;
+}
+
+#casa-1.visitado {
+  background-image: url("../tabuleiro/casas_passadas/casa_passada1.png");
+  top: 2px;
+}
+
+#casa-2.visitado {
+  background-image: url("../tabuleiro/casas_passadas/casa_passada2.png");
+}
+
+.visitado::before {
+  animation-name: scale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#casa-2.visitado::before {
+  content: "";
+  height: 118px;
+  width: 135px;
+  background-image: url('../tabuleiro/medalhas/medalha_2.png');
+  position: absolute;
+  bottom: 285px;
+  left: 295px;
+}
+
+#casa-3.visitado {
+    background-image: url("../tabuleiro/casas_passadas/casa_passada3.png");
+}
+
+#casa-3.visitado::before {
+  content: "";
+  height: 118px;
+  width: 135px;
+  background-image: url('../tabuleiro/medalhas/medalha_3.png');
+  position: absolute;
+  bottom: 280px;
+  left: 560px;
+}
+
+#casa-4.visitado {
+    background-image: url("../tabuleiro/casas_passadas/casa_passada4.png");
+}
+
+#casa-4.visitado::before {
+  content: "";
+  height: 118px;
+  width: 135px;
+  background-image: url('../tabuleiro/medalhas/medalha_4.png');
+  position: absolute;
+  bottom: 452px;
+  left: 685px;
+}
+
+#casa-5.visitado {
+    background-image: url("../tabuleiro/casas_passadas/casa_passada5.png");
+}
+
+#casa-5.visitado::before {
+  content: "";
+  height: 118px;
+  width: 135px;
+  background-image: url('../tabuleiro/medalhas/medalha_5.png');
+  position: absolute;
+  bottom: 468px;
+  left: 980px;
+}
+
+#casa-6.visitado {
+    background-image: url("../tabuleiro/casas_passadas/casa_passada6.png");
+}
+
+#casa-6.visitado::before {
+  content: "";
+  height: 118px;
+  width: 135px;
+  background-image: url('../tabuleiro/medalhas/medalha_6.png');
+  position: absolute;
+  bottom: 480px;
+  right: 550px;
+}
+
+#casa-7.visitado {
+    background-image: url("../tabuleiro/casas_passadas/casa_passada7.png");
+}
+
+#casa-7.visitado::before {
+  content: "";
+  height: 118px;
+  width: 135px;
+  background-image: url('../tabuleiro/medalhas/medalha_7.png');
+  position: absolute;
+  top: 190px;
+  right: 450px;
+}
+
+#casa-8.visitado {
+    background-image: url("../tabuleiro/casas_passadas/casa_passada8.png");
+}
+
+#casa-8.visitado::before {
+  content: "";
+  height: 118px;
+  width: 135px;
+  background-image: url('../tabuleiro/medalhas/medalha_8.png');
+  position: absolute;
+  top: 155px;
+  right: 255px;
+}
+
+
+#casa-1.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa1.png");
+}
+  
+#casa-2.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa2.png");
+}
+  
+#casa-3.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa3.png");
+}
+  
+#casa-4.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa4.png");
+}
+  
+#casa-5.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa5.png");
+}
+
+#casa-6.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa6.png");
+}
+  
+#casa-7.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa7.png");
+}
+  
+#casa-8.ativo {
+  background-image: url("../tabuleiro/casas_ativas/casa_ativa8.png");
+}
+
+.link {
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  position: absolute;
+  padding-top: 40px;
+  display: block;
+  text-align: center;
+  height: 70px;
+  width: 70px;
+}
+
+p.titulo {
+    color: white;
+    position: absolute;
+    font-size: 18px;
+    opacity: 0;
+    transition-duration: .3s;
+    font-weight: 800;
+    background-color: rgba(55, 55, 55, .5);
+    padding: 5px;
+    border-radius: 10px;
+}
+  
+.link:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+    color: white;
+}
+
+#link-1 {
+  bottom: 145px;
+  left: 233px;  
+}
+
+#titulo_01 {  
+  bottom: 90px;
+  left: 215px;  
+}
+
+#link-2 {
+  bottom: 295px;
+  left: 315px;
+  padding-top: 0;
+  padding-bottom: 40px;
+  
+}
+
+#titulo_02 {
+    bottom: 355px;
+    left: 260px;
+}
+
+#link-3 {
+  bottom: 295px;
+  left: 590px;
+  
+}
+
+#titulo_03 {
+    bottom: 240px;
+    left: 555px;
+}
+
+#link-4 {
+  bottom: 462px;
+  left: 710px;
+}
+
+#titulo_04 {
+    bottom: 520px;
+    left: 680px;
+}
+
+#link-5 {
+  bottom: 488px;
+  left: 1012px;
+  
+}
+
+#titulo_05 {
+    bottom: 545px;
+    left: 875px;
+}
+
+#link-6 {
+  bottom: 495px;
+  right: 568px;
+}
+
+#titulo_06 {
+    bottom: 440px;
+    right: 508px;
+}
+
+#link-7 {
+  top: 220px;
+  right: 473px;
+  
+}
+
+#titulo_07 {
+    top: 150px;
+    right: 453px;
+}
+
+#link-8 {
+  top: 175px;
+  right: 270px;
+}
+
+#titulo_08 {
+    top: 115px;
+    right: 235px;
+}
+
+.img_casa {
+  position: absolute;
+  pointer-events: none;
+  touch-action: none;
+  opacity: 0;
+}
+
+.img_visitado {
+  opacity: 1;
+}
+
+#img-02 {
+  top: 103px;
+  left: 56px;
+}
+
+#img-03 {
+  bottom: 55px;
+  left: 459px;
+}
+
+#img-04 {
+  left: 499px;
+  top: -10px;
+}
+
+#img-05 {
+  bottom: -30px;
+  left: 590px;
+}
+
+#img-06 {
+  bottom: 84px;
+  right: 232px;
+}
+
+#img-07 {
+  top: -30px;
+  right: 360px;
+}
+
+#img-08 {
+  bottom: 256px;
+  right: 120px;
+}
+
+#mobile {
+  display: none;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.alt-container {
+  padding-top: 7px;
+}
+
+.alt-container p {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.opt-container {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px dashed black;
+  padding-left: 25px;
+}
+
+.opt-container select {
+  margin: 5px 0 5px 0;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: solid 2px #849CBB;
+  display: inline;
+  margin-right: 10px;
+}
+
+.opt-container label {
+  display: inline;
+}
+
+#titulo {
+  position: absolute;
+  z-index: 100;
+  height: 190px;
+  
+}
+
+/* atividades interativas */
+
+.opcao {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #cecece;
+  transition-duration: .3s;
+}
+
+.img-container {
+  border: 3px solid #cecece;
+  display: block;
+  width: 240px;
+  padding: 3px;
+  margin: 5px 15px;
+  box-shadow: 1px 1px 3px #cecece;
+}
+
+.correto {
+  border: 2px solid rgba(75, 205, 75, .7);
+  transition-duration: .3s;
+}
+
+.img-container.correto {
+  border: 4px solid rgba(75, 205, 75, .7);
+}
+
+.img-container.errado {
+  border: 4px solid rgba(205, 75, 75, .7);
+}
+
+.errado {
+  border: 2px solid rgba(205, 75, 75, .7);
+  transition-duration: .3s;
+}
+
+.select-img-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.img-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.img-container img {
+  height: 150px;
+  width: 225px;
+  display: block;
+  margin: 0 auto;
+}
+
+#btn-ref {
+  position: absolute;
+  height: 65px;
+  transition-duration: .3s;
+  bottom: 25px;
+  right: 25px;
+  background-color: rgba(132, 156, 187, .8);
+  color: black;
+  border-radius: 15px;
+  border: 3px solid white;
+  font-size: 22px;
+  padding: 10px;
+  color: white;
+}
+
+#btn-ref:hover {
+  background-color: white;
+  
+  color: #849CBB;
+  transition-duration: .3s;
+}
+
+.trilha {
+  background-image: url('../tabuleiro/Tabuleiro_trilha.png');
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: center;
+  height: 1080px;
+  width: 1920px;
+  background-size: cover;
+}
+
+.titulo_ativo {
+  background-color: rgb(255, 255, 255);
+  border: 6px solid #000;
+  display: block;
+  max-width: 350px;
+  font-size: 22px;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  color: #000;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  z-index: 100;
+}
+.link.ativo {
+  background-color: rgb(214, 70, 104);
+  border-color: rgb(214, 70, 104) !important;
+  color: white;
+}
+.titulo_ativo.ativo {
+  opacity: 1;
+}
+
+#titulo_a_01 {
+  bottom: 205px;
+  left: 200px;
+}
+
+#titulo_a_02 {
+  bottom: 365px;
+  left: 225px;
+}
+
+#titulo_a_03 {
+  bottom: 365px;
+  left: 535px;
+}
+
+#titulo_a_04 {
+  top: 320px;
+  left: 645px;
+}
+
+#titulo_a_05 {
+  top: 220px;
+  left: 845px;
+  font-size: 24px;
+}
+
+#titulo_a_06 {
+  top: 290px;
+  right: 480px;
+}
+
+#titulo_a_07 {
+  top: 100px;
+  right: 400px;
+}
+
+#titulo_a_08 {
+  top: 40px;
+  right: 170px;
+}
+
+#aviso-1 {
+  transition: 300ms;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #bg {
+    display: none;
+  }
+
+
+  .select-img-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #titulo {
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  body {
+    background-color: white;
+    overflow: auto;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  .link {
+    height: unset;
+    position: static;
+    width: 80%;
+    margin: 16px auto;
+    background-color: #849CBB;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+
+  .link:hover {
+    color: #849CBB;
+    border: 2px solid #849CBB;
+    transform: unset;
+  }
+
+  #mobile-header {
+    height: auto;
+    width: 100%;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 15px auto 25px auto;
+  }
+}
+
+@media only screen and (orientation: portrait){
+  #bg {
+    transform-origin: center left !important;
+  }
+  }
+
+@keyframes scale {
+  0% {transform: scale(.9);}
+  50% {transform: scale(1);}
+  100% {transform: scale(.9);}
+}
+/*# sourceMappingURL=styles.css.map */

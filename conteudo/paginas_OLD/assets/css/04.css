@@ -1,0 +1,62 @@
+body {
+    /* background-image: url('../img/04_signos/signos-bg.png'); */
+    background-color: #96bfc3;
+}
+
+.bloco-2 {
+    background-image: url('../img/04_signos/signos1.jpg');
+}
+
+.bloco-3 {
+    background-image: url('../img/04_signos/signos.png');
+}
+
+.titulo {
+    background-image: url('../img/04_signos/signos-header.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 201px;
+}
+
+.titulo h1 {
+    color: black;
+}
+
+.destaque-final::after {
+    background-image: url('../img/medalhas/medalha_4.png');
+}
+
+
+video {
+    background-color: black;
+    display: block;
+    height: 320px;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+.parallax-img-01 {
+    top: 100px;
+    left: 15px;
+    height: 250px;
+}
+
+.parallax-img-02 {
+    right: 15px;
+    height: 280px;
+}
+
+@keyframes parallax-1 {
+    0% {top: 100px;}
+    25% {top: 120px;}
+    75% {top: 80px;}
+    100% {top: 100px;}
+}
+
+@keyframes parallax-2 {
+    0% {top: 350px;}
+    25% {top: 370px;}
+    75% {top: 360px;}
+    100% {top: 350px;}
+}
