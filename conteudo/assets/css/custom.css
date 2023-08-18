@@ -2,16 +2,22 @@
 .img-menor {
     width: 50%;
 }
+
 .img-menor1 {
     width: 70%;
     text-align: center;
 }
-p{
+.margem{
+    margin-top: -75px;
+}
+p {
     word-wrap: break-word;
 }
+
 .img-maior {
     width: 70%;
 }
+
 .bg-video {
     background-image: url(../tela_inicial/video_bg.png);
     background-size: contain;
@@ -22,6 +28,7 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 header.titulo-conteudo {
     position: absolute;
     width: 100%;
@@ -321,13 +328,14 @@ h3 {
 header#topo {
     position: relative;
 }
+
 @media (max-width: 1024px) {
-.img_float_1 {
-    position: absolute;
-    bottom: -240px;
-    right: -48px;
-    max-height: 250px;
-}
+    .img_float_1 {
+        position: absolute;
+        bottom: -240px;
+        right: -48px;
+        max-height: 250px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -335,6 +343,15 @@ header#topo {
         max-height: 150px;
         right: 50%;
         transform: translateX(50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .audio-ingles {
+        width: 90%;
+    }
+    .margem{
+        margin-top: unset;
     }
 }
 

@@ -81,7 +81,9 @@ font-weight: 700;
   margin-left: auto;
   margin-right: auto;
 }
-
+figcaption{
+  text-align: center;
+}
 .btn.btn-link.closePDFobs {
   position: absolute;
   top: 20px;
