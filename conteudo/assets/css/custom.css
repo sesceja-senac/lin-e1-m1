@@ -1,4 +1,81 @@
 /* LAYOUT */
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 115px;
+    left: 120px;
+    background-image: url('../menu/menu-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+    width: 343px;
+    padding: 60px 40px 60px 40px;
+    font-family: 'marker';
+    z-index: 20;
+    transition-duration: .3s;
+}
+.menu a {
+    color: #007178;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+}
+.menu a::after {
+    left: -100px;
+    transition-duration: .3s;
+    content: '';
+    background-image: url('../menu/selecao.png');
+    width: 213px;
+    height: 10px;
+    bottom: -10px;
+}
+.menu a:hover::after {
+    
+    left: 0;
+    position: absolute;
+    transition-duration: .3s;
+}
+.menu-btn {
+    position: fixed;
+    border: none;
+    width: 70px;
+    height: 80px;
+    background-color: transparent;
+    top: 125px;
+    left: 30px;
+    transition-duration: .3s;
+    z-index: 100;
+    margin-bottom: 15px;
+}
+.menu-btn img {
+    width: 100%;
+}
+.menu-btn:hover {
+    transform: scale(1.05);
+    transition-duration: .3s;
+}
+.menu.hidden {
+    left: -800px;
+    transition-duration: .3s;
+}
+.pagina-2 .menu, .pagina-3 .menu {
+    justify-content: flex-start;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.pagina-2 .menu a, .pagina-3 .menu a{
+    margin-bottom: 40px;
+}
+
+.audio-ingles {
+    display: block;
+}
+
+
 .img-menor {
     width: 50%;
 }
@@ -375,7 +452,7 @@ header#topo {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     .bg-video {
         background-image: unset;
         background-size: unset;
