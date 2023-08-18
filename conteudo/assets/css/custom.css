@@ -1,13 +1,38 @@
 /* LAYOUT */
+.img-menor {
+    width: 50%;
+}
+.img-menor1 {
+    width: 70%;
+    text-align: center;
+}
+p{
+    word-wrap: break-word;
+}
+.img-maior {
+    width: 70%;
+}
+.bg-video {
+    background-image: url(../tela_inicial/video_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 754px;
+    height: 572px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 header.titulo-conteudo {
     position: absolute;
     width: 100%;
     padding-top: 15px;
     z-index: 99;
 }
+
 header.titulo-conteudo .container {
     background-color: transparent;
 }
+
 footer {
     position: absolute;
     margin-top: -90px;
@@ -16,34 +41,42 @@ footer {
     margin-right: auto;
     display: block;
 }
+
 footer.footer_bg_1 {
     margin-top: -220px;
 }
+
 footer.container {
     background-color: transparent;
 }
+
 .pagination {
     justify-content: center;
 }
-.pagination li.active .btn-sesc{
+
+.pagination li.active .btn-sesc {
     transform: translateY(-3px);
     box-shadow: 2px 2px 2px #333;
 }
+
 .bg-1 {
     background-image: url('../1/background.png');
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 240px;
 }
+
 .bg-1 .container {
     position: relative;
 }
+
 .bg-2 {
     background-image: url('../2/background.png');
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .bg-3 {
     background-image: url('../3/background.png');
     margin-top: -20px;
@@ -51,9 +84,12 @@ footer.container {
     padding-bottom: 100px;
     color: white;
 }
-.bg-3 h3, .bg-3 h4 {
+
+.bg-3 h3,
+.bg-3 h4 {
     color: white;
 }
+
 .bg-4 {
     background-image: url('../3/background.png');
     margin-top: -20px;
@@ -61,60 +97,82 @@ footer.container {
     padding-bottom: 100px;
     color: white;
 }
+
 .bg-5 {
     background-image: url('../2/background.png');
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .bg-6 {
     background-image: url('../2/background.png');
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.bg-1 .container, .bg-2 .container, .bg-3 .container, .bg-4 .container, .bg-5 .container, .bg-6 .container {
+
+.bg-1 .container,
+.bg-2 .container,
+.bg-3 .container,
+.bg-4 .container,
+.bg-5 .container,
+.bg-6 .container {
     background-color: transparent;
 }
+
 .refs .container {
     margin-top: -80px;
     padding: 100px 35px 25px 35px;
 }
+
 .refs {
     background-image: url('../referencias/background_inserir_fundo_branco.png');
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 figure {
     margin: 35px auto;
 }
+
 figcaption {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 40px;
 }
+
 h3 {
     font-size: 22px;
     margin-top: 45px;
     margin-bottom: 20px;
 }
+
 .bs-tooltip {
     color: #333;
     text-decoration: none;
     border-bottom: 2px dashed #333;
     cursor: pointer;
 }
-.bg-3 .bs-tooltip, .bg-4 .bs-tooltip {
+
+.bg-3 .bs-tooltip,
+.bg-4 .bs-tooltip {
     color: white;
     border-bottom: 2px dashed white;
 }
-.bg-3 h2, .bg-3 h3, .bg-4 h2, .bg-4 h3 {
+
+.bg-3 h2,
+.bg-3 h3,
+.bg-4 h2,
+.bg-4 h3 {
     color: white;
 }
+
 .bs-tooltip:hover {
     color: #333;
 }
+
 .caixa {
     background-color: #00828b;
     color: white;
@@ -122,21 +180,28 @@ h3 {
     border: none;
     margin: 35px auto;
 }
+
 .caixa.icone {
     padding: 20px;
     padding-left: 70px;
 }
+
 .caixa.icone p {
     color: white;
 }
-.caixa.icone.praticar p, .caixa.icone.praticar figcaption {
+
+.caixa.icone.praticar p,
+.caixa.icone.praticar figcaption {
     color: #333;
 }
-.bg-1 .caixa p, .bg-2 .caixa p {
+
+.bg-1 .caixa p,
+.bg-2 .caixa p {
     color: white;
     margin-bottom: 0;
-    margin-top: 0;    
+    margin-top: 0;
 }
+
 .icone::before {
     background-size: contain;
     background-color: transparent;
@@ -144,6 +209,7 @@ h3 {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .icone.praticar {
     background-color: transparent;
     border: 2px solid #00828b;
@@ -155,14 +221,17 @@ h3 {
     background-color: white;
     color: #333;
 }
+
 .bg-3 .icone.praticar h3 {
     color: #333;
 }
+
 .icone.praticar::before {
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .img_float_1 {
     position: absolute;
     bottom: -240px;
@@ -208,18 +277,22 @@ h3 {
     width: 80%;
     margin: 40px auto;
 }
+
 .tooltip-p p {
     margin: 0;
     font-size: 18px;
 }
+
 .tooltip-p:hover {
     box-shadow: 1px 1px 4px #333;
 }
+
 .tooltip .tooltip-inner {
     font-size: 16px;
     max-width: 500px;
     padding: 15px;
 }
+
 .ytb {
     height: 300px;
     width: 540px;
@@ -227,6 +300,7 @@ h3 {
     margin: 40px auto;
     display: block;
 }
+
 .painel-gaitinha .accordion-button {
     font-family: unset;
 }
@@ -243,16 +317,27 @@ h3 {
     max-width: 100%;
     color: white;
 }
+
 header#topo {
     position: relative;
 }
-@media (max-width: 1000px){
+@media (max-width: 1024px) {
+.img_float_1 {
+    position: absolute;
+    bottom: -240px;
+    right: -48px;
+    max-height: 250px;
+}
+}
+
+@media (max-width: 1000px) {
     .img_float_1 {
         max-height: 150px;
         right: 50%;
         transform: translateX(50%);
     }
 }
+
 @media (max-width: 700px) {
     .card {
         width: 100%;
@@ -261,12 +346,27 @@ header#topo {
     .card-row {
         flex-direction: column;
     }
+
     .img_float_1 {
         max-height: 150px;
         right: 50%;
         transform: translateX(50%);
     }
+
     .img-1 {
         max-height: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .bg-video {
+        background-image: unset;
+        background-size: unset;
+        background-repeat: unset;
+        width: unset;
+        height: unset;
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
     }
 }
