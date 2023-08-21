@@ -17,12 +17,14 @@
     z-index: 20;
     transition-duration: .3s;
 }
+
 .menu a {
     color: #007178;
     font-size: 22px;
     text-decoration: none;
     position: relative;
 }
+
 .menu a::after {
     left: -100px;
     transition-duration: .3s;
@@ -32,12 +34,14 @@
     height: 10px;
     bottom: -10px;
 }
+
 .menu a:hover::after {
-    
+
     left: 0;
     position: absolute;
     transition-duration: .3s;
 }
+
 .menu-btn {
     position: fixed;
     border: none;
@@ -50,24 +54,30 @@
     z-index: 100;
     margin-bottom: 15px;
 }
+
 .menu-btn img {
     width: 100%;
 }
+
 .menu-btn:hover {
     transform: scale(1.05);
     transition-duration: .3s;
 }
+
 .menu.hidden {
     left: -800px;
     transition-duration: .3s;
 }
-.pagina-2 .menu, .pagina-3 .menu {
+
+.pagina-2 .menu,
+.pagina-3 .menu {
     justify-content: flex-start;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-.pagina-2 .menu a, .pagina-3 .menu a{
+.pagina-2 .menu a,
+.pagina-3 .menu a {
     margin-bottom: 40px;
 }
 
@@ -84,9 +94,11 @@
     width: 70%;
     text-align: center;
 }
-.margem{
+
+.margem {
     margin-top: -75px;
 }
+
 p {
     word-wrap: break-word;
 }
@@ -323,6 +335,22 @@ h3 {
     max-height: 250px;
 }
 
+.img_float_fig1 {
+    position: absolute;
+    top: 272px;
+    left: 504px;
+    max-height: 250px;
+}
+
+.img_float_fig2 {
+    position: absolute;
+    top: 520px;
+    right: 500px;
+    max-height: 250px;
+}
+
+
+
 .card-row {
     display: flex;
     justify-content: space-around;
@@ -406,6 +434,25 @@ header#topo {
     position: relative;
 }
 
+
+
+
+@media (max-width: 2280px) {
+    .img_float_fig1 {
+        position: absolute;
+        top: 272px;
+        left: 0;
+        max-height: 250px;
+    }
+
+    .img_float_fig2 {
+        position: absolute;
+        top: 520px;
+        right: 0;
+        max-height: 250px;
+    }
+}
+
 @media (max-width: 1024px) {
     .img_float_1 {
         position: absolute;
@@ -427,7 +474,8 @@ header#topo {
     .audio-ingles {
         width: 90%;
     }
-    .margem{
+
+    .margem {
         margin-top: unset;
     }
 }
