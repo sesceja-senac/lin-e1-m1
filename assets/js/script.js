@@ -1,3 +1,14 @@
+//audio
+// var x = document.getElementById("myAudio");
+
+// function playAudio() {
+//   x.play();
+// }
+
+// function pauseAudio() {
+//   x.pause();
+// }
+
 
 //modais
 var modal1 = new bootstrap.Modal(document.getElementById('modal-1'), {});

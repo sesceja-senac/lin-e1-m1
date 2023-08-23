@@ -81,9 +81,9 @@
     margin-bottom: 40px;
 }
 
-.audio-ingles {
+/* .audio-ingles {
     display: block;
-}
+} */
 
 
 .img-menor {
@@ -444,9 +444,54 @@ header#topo {
 .boxCenterCnt p{
     max-width: 450px;
 }
+.audioboxmd .col{
+    max-width: 180px;
+}
+.audioboxmd .col:first-child, .audioboxmd.audioboxgrande .col:first-child{
+    max-width: 130px;
+}
+/* .audioboxmd.audioboxgrande .col:first-child{
+    max-width: 130px;
+} */
+.audioboxmd.audioboxgrande .col{
+    max-width: 350px;
+}
+.audioboxmd .sesc-audio-player input[type=range], .audioboxmd .btn-pause {
+    display: none;
+}
+.sesc-audio-player input[type=range], .btn-pause {
+    display: none;
+}
+.sesc-audio-player.onblock input[type=range], .sesc-audio-player.onblock .btn-pause {
+    display: inline-block;
+}
 
-
-
+.box-round{
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #004f53;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+.box-round img{
+    position: absolute;
+    right: -10px;
+    bottom: -00px;
+    max-width: 100px;
+}
+.box-round p{
+    max-width: 300px;
+}
+.box-chocolatecake{ position: relative;}
+.chocolatecake{ position: absolute;
+    background-color: transparent;
+    top: 420px;
+    left: -150px;
+    right: 0;
+    margin: 0 auto;
+    max-width: 100px;
+}
 @media (max-width: 2280px) {
     .img_float_fig1 {
         position: absolute;
