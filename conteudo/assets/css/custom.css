@@ -481,6 +481,11 @@ header#topo {
 }
 
 @media (max-width: 700px) {
+    .menu {
+    left: 0px;
+    max-width: 100%;
+    }
+
     .card {
         width: 100%;
     }
@@ -501,6 +506,10 @@ header#topo {
 }
 
 @media (max-width: 500px) {
+    .menu-btn{
+        top: 10px;
+        left: 10px;
+    }
     .bg-video {
         background-image: unset;
         background-size: unset;
