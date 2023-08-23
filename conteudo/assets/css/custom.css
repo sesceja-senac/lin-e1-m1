@@ -434,6 +434,16 @@ header#topo {
     position: relative;
 }
 
+.boxCenterCnt{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.boxCenterCnt img{
+    max-width: 150px;
+}
+.boxCenterCnt p{
+    max-width: 450px;
+}
 
 
 
