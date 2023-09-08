@@ -31,6 +31,9 @@ body {
 a.btn-sesc {
   text-decoration: none;
 }
+.visitada:not(.active) a{
+  background-color: #9d9d9d;
+}
 
 .container {
   max-width: 928px;
