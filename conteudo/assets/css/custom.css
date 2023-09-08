@@ -483,7 +483,27 @@ header#topo {
 .box-round p{
     max-width: 300px;
 }
-.box-chocolatecake{ position: relative;}
+.card-row > div
+.box-chocolatecake, .cardplayer{ position: relative;}
+.cardplayer{
+    padding-bottom: 50px;
+}
+.cardplayerAudio{ position: absolute;
+    background-color: transparent;
+    top: 320px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    max-width: 100px;
+}
+.cardplayerAudio2{ position: absolute;
+    background-color: transparent;
+    top: 330px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    max-width: 100px;
+}
 .chocolatecake{ position: absolute;
     background-color: transparent;
     top: 420px;
