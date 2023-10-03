@@ -101,12 +101,13 @@
 
 p {
     word-wrap: break-word;
+    color: #fff;
 }
 
 .img-maior {
     width: 70%;
 }
-
+a.bs-tooltip, h2, h3, h4, .titulo-conteudo h2{color: #fff;}
 .bg-video {
     background-image: url(../tela_inicial/video_bg.png);
     background-size: contain;
@@ -167,7 +168,7 @@ footer.container {
 }
 
 .bg-2 {
-    background-image: url('../2/background.png');
+    background: #F9ECE1;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -202,7 +203,7 @@ footer.container {
 }
 
 .bg-6 {
-    background-image: url('../2/background.png');
+    background-color: #F9ECE1;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -216,7 +217,8 @@ footer.container {
 .bg-6 .container {
     background-color: transparent;
 }
-
+.bg-2 p, .bg-2 a.bs-tooltip, .bg-2 h2, .bg-2 h3, .bg-2 h4, .bg-2 figcaption,
+.bg-6 p, .bg-6 a.bs-tooltip, .bg-6 h2, .bg-6 h3, .bg-6 h4, .bg-6 figcaption{color: #00828b;}
 .refs .container {
     margin-top: -80px;
     padding: 100px 35px 25px 35px;
@@ -270,8 +272,8 @@ h3 {
 }
 
 .caixa {
-    background-color: #00828b;
-    color: white;
+    background-color: #fff;
+    color: #00828b;
     border-radius: 18px;
     border: none;
     margin: 35px auto;
@@ -283,7 +285,7 @@ h3 {
 }
 
 .caixa.icone p {
-    color: white;
+    color: #00828b;
 }
 
 .caixa.icone.praticar p,
@@ -293,7 +295,7 @@ h3 {
 
 .bg-1 .caixa p,
 .bg-2 .caixa p {
-    color: white;
+    color: #00828b;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -349,7 +351,38 @@ h3 {
     max-height: 250px;
 }
 
+.img_float_balao1 {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    max-height: 250px;
+}
+.img_float_balao2 {
+    position: absolute;
+    top: 1000px;
+    right: 20px;
+    max-height: 250px;
+}
+.img_float_balao3 {
+    position: absolute;
+    top: 2500px;
+    left: 20px;
+    max-height: 250px;
+}
+.img_float_balao4 {
+    position: absolute;
+    top: 4000px;
+    right: 20px;
+    max-height: 250px;
+}
+.img_float_balao5 {
+    position: absolute;
+    top: 5000px;
+    left: 20px;
+    max-height: 250px;
+}
 
+.titulo-conteudo h2{display: none;}
 
 .card-row {
     display: flex;
@@ -381,7 +414,7 @@ h3 {
 }
 
 .tooltip-p {
-    background-color: rgba(0, 130, 139, .8);
+    background-color: #fff;
     border: 2px solid rgb(0, 130, 139);
     padding: 25px 35px;
     color: white;
