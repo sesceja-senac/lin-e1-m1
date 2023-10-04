@@ -155,9 +155,11 @@ footer.container {
     transform: translateY(-3px);
     box-shadow: 2px 2px 2px #333;
 }
-
+.senhorinhas{
+    max-width: 480px;
+}
 .bg-1 {
-    background-image: url('../1/background.png');
+    background: url('../1/icone.png') no-repeat top 560px left 20px / 15%, url('../1/background.png') repeat;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 240px;
@@ -560,7 +562,12 @@ header#topo {
         max-height: 250px;
     }
 }
-
+@media (max-width: 1380px){
+    .senhorinhas{
+        max-width: 100%;
+    }
+    .bg-1 {background: url('../1/background.png') repeat;}
+}
 @media (max-width: 1024px) {
     .img_float_1 {
         position: absolute;
