@@ -228,11 +228,13 @@ footer.container {
 
 .refs {
     background-image: url('../referencias/background_inserir_fundo_branco.png');
+    background-attachment: fixed;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
+#link-ref,
+.refs p{color: #000;}
 figure {
     margin: 35px auto;
 }
