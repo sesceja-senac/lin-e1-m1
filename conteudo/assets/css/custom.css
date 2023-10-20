@@ -101,13 +101,13 @@
 
 p {
     word-wrap: break-word;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .img-maior {
     width: 70%;
 }
-a.bs-tooltip, h2, h3, h4, .titulo-conteudo h2{color: #fff;}
+/* a.bs-tooltip, h2, h3, h4, .titulo-conteudo h2{color: #fff;} */
 .bg-video {
     background-image: url(../tela_inicial/video_bg.png);
     background-size: contain;
@@ -159,7 +159,7 @@ footer.container {
     max-width: 480px;
 }
 .bg-1 {
-    background: url('../1/icone.png') no-repeat top 560px left 20px / 15%, url('../1/background.png') repeat;
+    background: url('../1/pg1_dir.png') no-repeat top 100px left 20px / 15%, url('../1/background.png') repeat;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 240px;
@@ -170,14 +170,15 @@ footer.container {
 }
 
 .bg-2 {
-    background: #F9ECE1;
+    background: url('../2/pg2_dir.png') no-repeat bottom 0 right / 15%, url('../2/pg2_esq.png') no-repeat top 100px left / 15%, url('../2/background.png') repeat;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .bg-3 {
-    background-image: url('../3/background.png');
+    background: url('../3/background.jpg') no-repeat;
+    background-attachment: fixed;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -190,27 +191,32 @@ footer.container {
 }
 
 .bg-4 {
-    background-image: url('../3/background.png');
+    background: url('../4/pg4_dir.png') no-repeat top right / 15%, url('../4/pg4_esq.png') no-repeat top left / 15%, url('../4/background.png') repeat;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
-    color: white;
 }
 
 .bg-5 {
-    background-image: url('../2/background.png');
+    background: url('../5/pg5_dir.png') no-repeat bottom right / 15%, url('../5/pg5_esq.png') no-repeat top left / 15%, url('../1/background.png');
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .bg-6 {
-    background-color: #F9ECE1;
+    background: url('../6/pg6_dir2.png') no-repeat bottom right / 15%, url('../6/pg6_dir.png') no-repeat top right / 15%, url('../6/pg6_esq.png') no-repeat left center / 15%, url('../3/background.jpg') no-repeat;
+    background-attachment: scroll, scroll, scroll, fixed;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 100px;
+    color: #fff;
 }
-
+.bg-6 .painel-gaitinha .accordion-body{color: #000;}
+.bg-6 .icone.praticar{
+    background-color: #fff;
+}
+.bg-6 .icone.praticar h3{color: #000;}
 .bg-1 .container,
 .bg-2 .container,
 .bg-3 .container,
@@ -219,8 +225,6 @@ footer.container {
 .bg-6 .container {
     background-color: transparent;
 }
-.bg-2 p, .bg-2 a.bs-tooltip, .bg-2 h2, .bg-2 h3, .bg-2 h4, .bg-2 figcaption,
-.bg-6 p, .bg-6 a.bs-tooltip, .bg-6 h2, .bg-6 h3, .bg-6 h4, .bg-6 figcaption{color: #00828b;}
 .refs .container {
     margin-top: -80px;
     padding: 100px 35px 25px 35px;
@@ -259,15 +263,15 @@ h3 {
 }
 
 .bg-3 .bs-tooltip,
-.bg-4 .bs-tooltip {
+.bg-6 .bs-tooltip {
     color: white;
     border-bottom: 2px dashed white;
 }
 
 .bg-3 h2,
 .bg-3 h3,
-.bg-4 h2,
-.bg-4 h3 {
+.bg-6 h2,
+.bg-6 h3 {
     color: white;
 }
 
@@ -296,12 +300,10 @@ h3 {
 .caixa.icone.praticar figcaption {
     color: #333;
 }
-
-.bg-1 .caixa p,
-.bg-2 .caixa p {
-    color: #00828b;
-    margin-bottom: 0;
-    margin-top: 0;
+.bg-1 .caixa {background: #00828b;}
+.bg-1 .caixa p{
+    color: #fff;
+    margin: 0;
 }
 
 .icone::before {
@@ -421,7 +423,7 @@ h3 {
     background-color: #fff;
     border: 2px solid rgb(0, 130, 139);
     padding: 25px 35px;
-    color: white;
+    color: #00828b;
     cursor: pointer;
     width: 80%;
     margin: 40px auto;
@@ -569,6 +571,8 @@ header#topo {
         max-width: 100%;
     }
     .bg-1 {background: url('../1/background.png') repeat;}
+    .bg-4{background: url('../4/background.png') repeat;}
+    .bg-5{background: url('../1/background.png') repeat;}
 }
 @media (max-width: 1024px) {
     .img_float_1 {
