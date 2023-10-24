@@ -100,7 +100,7 @@ h1 {
 }
 .main {
     max-width: 1200px;
-    margin: -180px auto;
+    margin: auto;
     transform: scale(0.7);
 }
 .row {
@@ -153,6 +153,9 @@ h1 {
     }
 }
 @media screen and (max-width:970px){
+    .custom-row {
+        flex-direction: column;
+    }
     .row {
         flex-wrap: wrap;
     }
