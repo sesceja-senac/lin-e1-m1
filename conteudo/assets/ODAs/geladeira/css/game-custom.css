@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'whatever';
+    src: url('../font/whatever\ it\ takes.ttf');
+}
+
+.obj_geladeira {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Interativo drag n drop */
+.obj_geladeira #content-game {
+    width: 920px;
+    max-width: 100%;
+    height: 810px;
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+}
+
+.obj_geladeira .tela-1,
+.obj_geladeira .tela-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 920px;
+    width: 100%;
+}
+
+.obj_geladeira .tela-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(55, 55, 55, .97);
+    border-radius: 20px;
+}
+
+.obj_geladeira .tela-1 .game-body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 60px;
+}
+
+.obj_geladeira .tela-1 p {
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    padding-left: 90px;
+    border-radius: 20px;
+    position: relative;
+    color: #333;
+}
+
+.obj_geladeira .tela-1 p::before {
+    content: '';
+    background-image: url('../img/pg2-praticar-ico.png');
+    height: 120px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.obj_geladeira #iniciar, .obj_geladeira #tentar-novamente {
+    background-color: #008086;
+    color: white;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.obj_geladeira #tentar-novamente {
+    margin-top: 25px;
+}
+.obj_geladeira #iniciar:hover, #tentar-novamente:hover {
+    background-color: rgb(20, 148, 154);
+}
+
+.obj_geladeira .tela-2 {
+    background: rgba(205, 225, 225, .99);
+    border-radius: 20px;
+    
+}
+
+.obj_geladeira .tela-2 .game-body {
+    padding-top: 140px;
+    height: 810px;
+    background-image: url('../img/geladeira.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% -4%;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+.obj_geladeira .game-body {
+    /* background-color: #ff9200; */
+    border: 5px solid #fff;
+    border-radius: 20px;
+    /* margin: 100px 0px 30px; */
+}
+
+.obj_geladeira .card_geladeira {
+    font-family: 'whatever';
+    margin: 5px;
+    width: 550px;
+    max-width: 100%;
+    box-shadow: 2px 2px 3px #333;
+    border-radius: 0;
+    background-position: center;
+    background-size: 152px;
+    background-repeat: no-repeat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgb(245, 245, 215);
+    color: rgb(31, 31, 31);
+}
+
+.obj_geladeira .card_geladeira:hover {
+    box-shadow: 5px 5px 6px #333;
+}
+
+.obj_geladeira .card_geladeira p {
+    color: black !important;
+}
+
+
+
+.obj_geladeira .game-descricao {
+    background-color: #fff;
+    padding: 20px 0 10px 125px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.obj_geladeira .game-descricao-img {
+    position: relative;
+}
+
+.obj_geladeira .game-itens-container {
+    margin: 0 !important;
+    padding: 0 0 25px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: calc(100% - 24px);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.obj_geladeira .game-descricao-img img {
+    width: 150px;
+    position: absolute;
+    top: -55px;
+}
+
+.obj_geladeira .game-descricao p {
+    color: #333 !important;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: initial;
+    text-align: center;
+}
+
+.obj_geladeira .game-body .slot {
+    width: 610px;
+    height: auto;
+    min-height: 120px;
+    background-color: transparent;
+    border: 3px dashed white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 22px;
+    padding-top: 22px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.obj_geladeira .game-titulo p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.obj_geladeira .game-titulo {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    color: #018085;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    max-width: 230px;
+    display: block;
+    margin: auto;
+}
+
+.obj_geladeira .ui-droppable p {
+    font-size: 18px;
+}
+
+.obj_geladeira .tela-erro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 225, 225, .99);
+    display: none;
+    border-radius: 20px;
+    border: 5px solid rgb(225, 105, 105);
+}
+.obj_geladeira .tela-erro .mensagem {
+    background-color: rgb(225, 105, 105);
+    color: white;
+    font-size: 18px;
+    line-height: 1.4rem;
+}
+.obj_geladeira .mensagem {
+    background-color: white;
+    padding: 10px 20px;
+    margin: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #333;
+}
+.obj_geladeira .mensagem p {
+    margin: 10px;
+}
+.obj_geladeira .geladeira {
+    background-image: url('../img/geladeira.png');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 50% -4%;
+    filter: drop-shadow(3px 3px 3px black);
+    height: 70%;
+    position: relative;
+    transform: scale(0.8);
+    animation: anim-geladeira 2s linear forwards;
+}
+@keyframes anim-geladeira {
+    0% {transform: scale(0.8);}
+    100% {transform: scale(1);}
+}
+.obj_geladeira .geladeira .card_geladeira {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%) scale(0.75);
+    box-shadow: none;
+}
+.obj_geladeira .tela-correto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 225, 225, .99);
+    display: none;
+    border-radius: 20px;
+    border: 5px solid rgb(105, 215, 105);
+}
+.obj_geladeira .tela-correto .mensagem {
+    background-color: rgb(105, 215, 105);
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+.obj_geladeira #slots .row,
+.obj_geladeira #cardPile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+/* Para não permitir o drag de novo de objetos que já estão posições corretas */
+.obj_geladeira .slot * {
+    pointer-events: none;
+    touch-action: none;
+}
+
+/* Para não exibir pra onde o usuário vai levar o card. */
+.obj_geladeira .slot .gu-transit {
+    display: none;
+}
+@media (max-width:900px){
+    .obj_geladeira #content-game {
+        max-width: 95%;
+    }
+    .obj_geladeira .game-body .slot {
+        width: 540px;
+    }
+    .obj_geladeira .geladeira .card_geladeira { 
+        top: 12%;
+        transform: translateX(-50%) scale(0.7);
+        width: 70%;
+    }
+}
+@media (max-width:560px) {
+    .obj_geladeira #slots .col-12.col-md-4.mt-3.mb-3 {
+        margin-bottom: 5px !important;
+        margin-top: 5px !important;
+    }
+
+    .obj_geladeira #slots .row,
+    .obj_geladeira #cardPile {
+        padding-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .obj_geladeira .game-body .slot,
+    .obj_geladeira .game-titulo {
+        max-width: 100%;
+    }
+
+    .obj_geladeira .card_geladeira {
+        display: inline;
+    }
+
+    .obj_geladeira #content-game, .obj_geladeira .tela-1 .game-body, .obj_geladeira .tela-2, .obj_geladeira .tela-2 .game-body {
+        height: 700px;
+    }
+    .obj_geladeira .tela-2 .game-body {
+        padding-top: 30px;
+    }
+    .obj_geladeira .tela-1 .game-body {
+        padding: 20px;
+    }
+    .obj_geladeira .tela-1 p {
+        font-size: 18px;
+        padding-left: 15px;
+        padding-top: 130px;
+    }
+
+    .obj_geladeira .tela-1 p::before {
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .obj_geladeira .tela-2 .game-body .slot {
+        width: 200px;
+    }
+
+    .obj_geladeira .tela-2 {
+        background-position: 40%;
+    }
+    .obj_geladeira .tela-2 .card_geladeira {
+        font-size: 17px;
+        line-height: 1.2rem;
+        font-weight: 800;
+    }
+    .obj_geladeira .geladeira {
+        background-size: 95%;
+    }
+    .obj_geladeira .geladeira .card_geladeira {
+        top: 8%;
+        font-size: 16px;
+        line-height: 1.2rem;
+    }
+    .obj_geladeira .tela-correto .mensagem, .tela-erro .mensagem {
+        margin-top: -200px;
+        z-index: 15;
+        position: relative;
+        width: 90%;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .obj_geladeira .tela-correto .mensagem {
+        margin-top: -120px;
+    }
+    .obj_geladeira .tela-correto .geladeira .card_geladeira {
+        top: 14%;
+    }
+    .obj_geladeira .mensagem p {
+        font-size: 17px;
+    }
+}
